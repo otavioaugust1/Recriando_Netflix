@@ -90,4 +90,12 @@ header nav a:hover{
     margin-right: 5px;
 }
 
+.box-filme{
+    height: 100%;
+    width: 100%;
+    display: block;
+}
 
+.carrosel-filmes{
+    margin-top: 5px;
+}
