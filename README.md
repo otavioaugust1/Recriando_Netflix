@@ -236,7 +236,7 @@ Este projeto foi baseado em **aulas e metodologias educacionais** do professor:
 
 **Contato:** otavioaugust@gmail.com
 
-**Versão:** 0.0.1 (Março/2026)
+**Versão:** 0.1.1 (Março/2026)
 
 ---
 
