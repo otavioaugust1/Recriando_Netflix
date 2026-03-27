@@ -10,6 +10,12 @@
    - Grid de filmes
    - Modais
    - Estados (hover, active, etc)
+   
+   SOBRE FONTES WEB:
+   - Google Fonts: URLs públicas, fácil de usar, sem instalação
+   - @font-face: Para fontes customizadas, arquivos locais
+   - Font-weight: 400 (normal), 700 (bold), etc
+   - Sempre incluir fallbacks (Arial, sans-serif)
 */
 
 /* ===== VARIÁVEIS DE CORES =====
@@ -36,7 +42,17 @@
 body {
     background: var(--cor-fundo);
     color: var(--cor-branco);
-    font-family: 'Segoe UI', 'Arial', sans-serif;
+    /* Usando Google Fonts - Poppins
+       Para usar font-face customizada (como Netflix Sans original):
+       @font-face {
+           font-family: 'Netflix Sans';
+           src: url('fonts/netflix-sans.woff2') format('woff2');
+           font-weight: normal;
+           font-style: normal;
+       }
+       Depois usar: font-family: 'Netflix Sans', serif;
+    */
+    font-family: 'Poppins', 'Segoe UI', 'Arial', sans-serif;
     font-size: 16px;
     line-height: 1.5;
     overflow-x: hidden;
