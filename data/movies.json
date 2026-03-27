@@ -1,0 +1,93 @@
+[
+  {
+    "title": "Stranger Things",
+    "type": "Série",
+    "year": "2016",
+    "summary": "Quando um menino desaparece, seus amigos enfrentam perigos do outro lado enquanto exploram seus mistérios. Uma série de ficção científica que mescla suspense, horror e nostalgia dos anos 80.",
+    "poster": "https://image.tmdb.org/t/p/w500/GUcJ00eykXGhGWQY9FX30L6ELJM.jpg"
+  },
+  {
+    "title": "La Casa de Papel",
+    "type": "Série",
+    "year": "2017",
+    "summary": "Um grupo de criminosos planejados por 'O Professor' executa um assalto à Casa da Moeda Real da Espanha. Série espanhola que redefiniu programação de suspense na plataforma.",
+    "poster": "https://image.tmdb.org/t/p/w500/fR8IBXFr8Hl84EO71MHlXAR3V70.jpg"
+  },
+  {
+    "title": "Breaking Bad",
+    "type": "Série",
+    "year": "2008",
+    "summary": "Um professor de química diagnosticado com câncer terminal se torna traficante de metanfetamina para sustentar sua família. Uma jornada épica de um homem bom descendo para o lado escuro.",
+    "poster": "https://image.tmdb.org/t/p/w500/ggJZesvWMkKbNd0iZ2K3Fgm3vUw.jpg"
+  },
+  {
+    "title": "The Witcher",
+    "type": "Série",
+    "year": "2019",
+    "summary": "Geralt de Rivia, um caçador de monstros solitário, navega por um mundo perigoso preenchido com magia, criaturas e conflitos políticos. Baseado na série de livros poloneses.",
+    "poster": "https://image.tmdb.org/t/p/w500/esmFWlPjFJJ97pYr5b4J0W84O25.jpg"
+  },
+  {
+    "title": "Dark",
+    "type": "Série",
+    "year": "2017",
+    "summary": "Quando crianças desaparecem de uma pequena cidade, a investigação revela uma teia complexa de viagens no tempo e segredos familiares. Série alemã aclamada de ficção científica.",
+    "poster": "https://image.tmdb.org/t/p/w500/eQvMN8Ot3wC8gAEhMdz0Jp7oCsB.jpg"
+  },
+  {
+    "title": "Black Mirror",
+    "type": "Série",
+    "year": "2011",
+    "summary": "Uma antologia que explora os efeitos obscuros, comicamente sombrios e, às vezes, trágicos da tecnologia moderna sobre a sociedade e seus indivíduos.",
+    "poster": "https://image.tmdb.org/t/p/w500/7dMQkxVhvW0n3z7h1fDdtNJV2dG.jpg"
+  },
+  {
+    "title": "The Crown",
+    "type": "Série",
+    "year": "2016",
+    "summary": "A história dramatizada da família real britânica começando com a coroação da Rainha Elizabeth II. Uma produção épica de épocas e eventos históricos.",
+    "poster": "https://image.tmdb.org/t/p/w500/v7Lv8gPLkflA5aSxu9h8rBnqRJC.jpg"
+  },
+  {
+    "title": "O Gambito da Rainha",
+    "type": "Série",
+    "year": "2020",
+    "summary": "Uma prodígio do xadrez em ascensão enfrenta gênios mundiais enquanto lida com seus demônios pessoais. Uma história de ambição, vício e redenção.",
+    "poster": "https://image.tmdb.org/t/p/w500/jI1BI0w09xHwwdjCsqnGqLTwfQE.jpg"
+  },
+  {
+    "title": "Squid Game",
+    "type": "Série",
+    "year": "2021",
+    "summary": "Centenas de competidores endividados aceitam jogar um jogo misterioso com uma chance de ganhar 38 milhões de dólares. Uma série coreana que virou fenômeno global.",
+    "poster": "https://image.tmdb.org/t/p/w500/t0q9pMNj74TbDvqr3VLr9T5JQhI.jpg"
+  },
+  {
+    "title": "Bridgerton",
+    "type": "Série",
+    "year": "2020",
+    "summary": "Na Londres da Regência, a família Bridgerton busca amor e status social enquanto navega pelas expectativas da sociedade aristocrática.",
+    "poster": "https://image.tmdb.org/t/p/w500/Rn9TH5vyV3AcsJay87aI7XhVJ3e.jpg"
+  },
+  {
+    "title": "The Mandalorian",
+    "type": "Série",
+    "year": "2019",
+    "summary": "Um caçador de recompensas solitário no universo Star Wars cuida de uma criança misteriosa enquanto viaja pela galáxia.",
+    "poster": "https://image.tmdb.org/t/p/w500/eU0so8jfzX6djPMYeb9u9cTMfsV.jpg"
+  },
+  {
+    "title": "Wednesday",
+    "type": "Série",
+    "year": "2022",
+    "summary": "Wednesday Addams se matricula em Nevermore Academy enquanto investiga uma série de assassinatos que assombram a cidade.",
+    "poster": "https://image.tmdb.org/t/p/w500/9puMBY5GsI8vDI25qPPQU2S3pKb.jpg"
+  },
+  {
+    "title": "The Irishman",
+    "type": "Filme",
+    "year": "2019",
+    "summary": "Um veterano que trabalhou como atirador de aluguel reflete sobre sua vida envolvida com a máfia. Filme aclamado dirigido por Martin Scorsese.",
+    "poster": "https://image.tmdb.org/t/p/w500/ng23nK1qL3A5HmJCAkVv9WnKfxc.jpg"
+  }
+]

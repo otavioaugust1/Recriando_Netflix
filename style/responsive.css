@@ -1,16 +1,10 @@
-@media screen and (max-width:700px){
-    header .container{
-        display: flex;
-        flex-direction: column;
-    }
-    .botao{
-        margin-top: 5px;
-        width: 190px;
-        height: auto;
-    }
-}
-@media screen and (min-width:1000px) {
-    .filme-principal .descricao{
-        width: 50%;
-    }
-}
+/* ===========================================
+   RESPONSIVE CSS
+   ===========================================
+   
+   As media queries estão definidas no arquivo main.css
+   para manter toda a estrutura de estilos centralizada.
+   
+   Este arquivo está reservado para possíveis
+   personalizações de responsividade no futuro.
+*/

@@ -4,82 +4,66 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/style/main.css">
-    <link rel="stylesheet" href="/style/responsive.css">
-    <link rel="stylesheet" href="/style/owl/owl.carousel.min.css">
-    <link rel="stylesheet" href="/style/owl/owl.theme.default.min.css">
-    
-    <title>NETFLIX CLONE</title>
+    <link rel="stylesheet" href="style/main.css">
+    <link rel="stylesheet" href="style/responsive.css">
+    <title>Netflix - Recriação para Aprendizado</title>
 </head>
 <body>
-    <header>
-        <div class="container">
-            <h2 class="logo">NETFLIX</h2>
-            <nav>
-                <a href="#">Iniciar</a>       
-                <a href="#">Séries</a>       
-                <a href="#">Filmes</a>       
-                <a href="#">Documentários</a>       
-            </nav>    
+    <!-- CABEÇALHO - Similar ao Netflix real -->
+    <header class="site-header">
+        <div class="header-container">
+            <!-- Logo Netflix -->
+            <div class="logo">NETFLIX</div>
+            
+            <!-- Menu de navegação -->
+            <nav class="nav-menu">
+                <button class="nav-btn" data-filter="all">Início</button>
+                <button class="nav-btn" data-filter="série">Séries</button>
+                <button class="nav-btn" data-filter="filme">Filmes</button>
+                <button class="nav-btn" data-filter="add">+ Adicionar</button>
+            </nav>
         </div>
     </header>
-    <main>
-        <div class="filme-principal">
-            <div class="container">
-                <h3 class="titulo">Matrix Resurrections</h3>
-                <p class="descricao">Em um mundo de duas realidades — a vida cotidiana e o que está por trás dela —, Thomas Anderson terá que escolher seguir o coelho branco mais uma vez. A escolha, embora seja uma ilusão, ainda é a única maneira de entrar ou sair da Matrix, que é mais forte, mais segura e mais perigosa do que nunca.</p>
-                <div class="botoes">
-                    <button role="button" class="botao">
-                        <i class="fa-duotone fa-play"></i>
-                        ASSISTIR AGORA
-                    </button>
-                    <button role="button" class="botao">
-                        <i class="fa-duotone fa-circle-info"></i>
-                        MAIS INFORMAÇÕES
-                    </button>
+
+    <!-- CONTEÚDO PRINCIPAL -->
+    <main class="main-content">
+        <!-- SEÇÃO DESTAQUE - Filme em grande -->
+        <section id="hero" class="hero-section">
+            <div class="hero-content">
+                <!-- Imagem de fundo do filme (carregada via JS) -->
+            </div>
+            
+            <!-- Informações do filme em destaque -->
+            <div class="hero-info">
+                <h1 id="hero-title">Carregando...</h1>
+                <p id="hero-summary">Aguarde...</p>
+                <div class="hero-buttons">
+                    <button id="play-btn" class="btn btn-play">▶ ASSISTIR</button>
+                    <button id="info-btn" class="btn btn-info">ⓘ MAIS INFORMAÇÕES</button>
                 </div>
-            </div>            
-        </div>
+            </div>
+        </section>
+
+        <!-- SEÇÃO DE FILMES/SÉRIES -->
+        <section class="content-section">
+            <div id="movies-container" class="movies-grid">
+                <!-- Filmes/séries carregados via JavaScript -->
+            </div>
+        </section>
     </main>
-    <div class="carrosel-filmes">
-        <div class="owl-carousel owl-theme">
-            <div class="item">
-                <img class="box-filme" src="/img/mini01.jpg" alt="" srcset="">
-            </div> 
-            <div class="item">
-                <img class="box-filme" src="/img/mini02.jpg" alt="" srcset="">
-            </div>
-            <div class="item">
-                <img class="box-filme" src="/img/mini03.jpg" alt="" srcset="">
-            </div>
-            <div class="item">
-                <img class="box-filme" src="/img/mini04.jpg" alt="" srcset="">
-            </div>
-            <div class="item">
-                <img class="box-filme" src="/img/mini05.jpg" alt="" srcset="">
-            </div>
-            <div class="item">
-                <img class="box-filme" src="/img/mini06.jpg" alt="" srcset="">
-            </div>
-            <div class="item">
-                <img class="box-filme" src="/img/mini07.jpg" alt="" srcset="">
-            </div>
-            <div class="item">
-                <img class="box-filme" src="/img/mini08.jpg" alt="" srcset="">
-            </div>
-            <div class="item">
-                <img class="box-filme" src="/img/mini09.jpg" alt="" srcset="">
-            </div>
-            <div class="item">
-                <img class="box-filme" src="/img/mini10.jpg" alt="" srcset="">
-            </div>
+
+    <!-- MODAL - Detalhes do filme/série -->
+    <div id="details-modal" class="modal" aria-hidden="true">
+        <div class="modal-backdrop"></div>
+        <div class="modal-card">
+            <button id="close-modal-btn" class="modal-close" aria-label="Fechar">✕</button>
+            <h2 id="modal-title">Título</h2>
+            <p id="modal-summary">Resumo...</p>
+            <p id="modal-details">Detalhes...</p>
         </div>
     </div>
 
-
-    <script src="https://kit.fontawesome.com/d4784d5aff.js"></script>
-    <script src="/js/owl/jquery.min.js"></script>
-    <script src="/js/owl/owl.carousel.min.js"></script>
-    <script src="/js/owl/setup.js"></script>
+    <!-- SCRIPT PRINCIPAL - Carregamento e interatividade -->
+    <script src="js/app.js"></script>
 </body>
 </html>

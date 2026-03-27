@@ -1,101 +1,401 @@
-:root{
-    --vermelho:#E50914;
-    --preta:#141414;
-    --cinza: #aaa;
-    --branco: #fff;
+/* ============================================
+   NETFLIX CLONE - Estilos CSS Principais
+   ============================================
+   
+   Este arquivo define a aparência visual da página.
+   Está organizado em seções para melhor compreensão:
+   - Variáveis e reset
+   - Cabeçalho (header)
+   - Seção hero (filme em destaque)
+   - Grid de filmes
+   - Modais
+   - Estados (hover, active, etc)
+*/
 
+/* ===== VARIÁVEIS DE CORES =====
+   Estas cores são reutilizadas em todo o CSS,
+   facilitando mudanças futuras de tema */
+:root {
+    --cor-primaria: #e50914;      /* Vermelho Netflix */
+    --cor-fundo: #141414;         /* Preto cinzento */
+    --cor-cinza: #808080;         /* Cinza neutro */
+    --cor-branco: #ffffff;        /* Branco */
+    --cor-secundaria: #303030;    /* Cinza escuro */
 }
 
-*{
+/* ===== RESET GLOBAL =====
+   Remove espaços padrão do navegador */
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/*ELEMENTOS BASE*/
-body{
-    background: var(--preta);
-    font-family: Arial, Helvetica, sans-serif;
-    color: var(--branco);
+/* ===== BODY (Fundo da página) =====
+   Define aparência geral da página */
+body {
+    background: var(--cor-fundo);
+    color: var(--cor-branco);
+    font-family: 'Segoe UI', 'Arial', sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    overflow-x: hidden;
 }
 
-header .container{
+/* ============================================
+   SEÇÃO: CABEÇALHO (HEADER)
+   ============================================ */
+
+.site-header {
+    background: linear-gradient(180deg, rgba(0,0,0,0.8) 0%, transparent 100%);
+    padding: 15px 0;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.header-container {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 20px;
     display: flex;
-    flex-direction: row;
-    align-items: center;
     justify-content: space-between;
+    align-items: center;
 }
 
-header .logo{
-    color: var(--vermelho);
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 40px;
+/* Logo Netflix */
+.logo {
+    font-size: 28px;
+    font-weight: 700;
+    color: var(--cor-primaria);
+    letter-spacing: 2px;
 }
 
-header nav a{
-    text-decoration: none;
-    color:var(--cinza);
-    margin-right: 10px;
-}
-
-header nav a:hover{
-    color: (--branco);
-}
-
-/*FILME PRINCIPAL*/
-.filme-principal{
-    font-size: 15px;
-    background: linear-gradient(rgba(0,0,0,.50),rgba(0,0,0,.50) 100%), url('/img/matrix_4.jpg');
-
-    height: 400px;
-    background-size: cover;
-
+/* Menu de navegação */
+.nav-menu {
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
+    gap: 20px;
+    list-style: none;
 }
 
-.filme-principal .descricao{
-    margin-top: 10px;
-    margin-bottom: 40px;
-}
-
-.filme-principal .titulo{
-    font-size: 35px;
-    margin-top: 15%;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-
-}
-
-/*pegar icone no https://fontawesome.com/ */
-.filme-principal .botao{
-    background-color: rgba(0,0,0,.50);
+/* Botões do menu */
+.nav-btn {
+    background: none;
     border: none;
-    color: var(--branco);
-
-    padding: 15px 30px;
-    margin-right: 15px;
-    font-size: 12px;
-
+    color: var(--cor-cinza);
+    font-size: 14px;
     cursor: pointer;
-    transition: .3s ease all;
-}
-.filme-principal .botao:hover{
-    background-color: var(--branco);
-    color:var(--preta)
+    transition: color 0.3s ease;
+    font-weight: 500;
+    padding: 5px 10px;
 }
 
-.filme-principal .botao i{
-    margin-right: 5px;
+.nav-btn:hover {
+    color: var(--cor-branco);
 }
 
-.box-filme{
-    height: 100%;
+/* ============================================
+   SEÇÃO: HERO (Filme em Destaque)
+   ============================================ */
+
+.hero-section {
+    /* Imagem de fundo será definida via JavaScript */
+    height: 500px;
+    display: flex;
+    align-items: flex-end;
+    color: var(--cor-branco);
+    position: relative;
+}
+
+/* Conteúdo dentro do hero */
+.hero-info {
+    max-width: 1400px;
     width: 100%;
+    margin: 0 auto;
+    padding: 40px 20px 60px;
+    position: relative;
+    z-index: 2;
+}
+
+/* Título do filme em destaque */
+#hero-title {
+    font-size: 48px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.8);
+}
+
+/* Resumo do filme */
+#hero-summary {
+    font-size: 18px;
+    max-width: 600px;
+    margin-bottom: 30px;
+    line-height: 1.6;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.8);
+}
+
+/* Botões do hero */
+.hero-buttons {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+/* Estilo dos botões */
+.btn {
+    padding: 12px 30px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+}
+
+/* Botão "Assistir" - primário (vermelho) */
+.btn-play {
+    background: var(--cor-primaria);
+    color: var(--cor-branco);
+}
+
+.btn-play:hover {
+    background: #f40411;
+    transform: scale(1.05);
+}
+
+/* Botão "Mais Informações" - secundário (cinza) */
+.btn-info {
+    background: rgba(255, 255, 255, 0.25);
+    color: var(--cor-branco);
+}
+
+.btn-info:hover {
+    background: rgba(255, 255, 255, 0.4);
+    transform: scale(1.05);
+}
+
+/* ============================================
+   SEÇÃO: Grid de Filmes/Séries
+   ============================================ */
+
+.content-section {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 40px 20px;
+}
+
+.movies-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+    gap: 20px;
+    padding: 20px 0;
+}
+
+/* Card individual do filme */
+.movie-card {
+    position: relative;
+    cursor: pointer;
+    overflow: hidden;
+    border-radius: 8px;
+    background: var(--cor-secundaria);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Efeito hover no card */
+.movie-card:hover {
+    transform: scale(1.08);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
+}
+
+/* Imagem dentro do card */
+.card-image {
+    width: 100%;
+    height: 270px;
+    object-fit: cover;
     display: block;
 }
 
-.carrosel-filmes{
-    margin-top: 5px;
+/* Título do filme dentro do card */
+.card-title {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: linear-gradient(180deg, transparent 0%, rgba(0, 0, 0, 0.9) 100%);
+    padding: 20px 15px 15px;
+    font-size: 14px;
+    font-weight: 600;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+/* Mostrar título ao passar o mouse */
+.movie-card:hover .card-title {
+    opacity: 1;
+}
+
+/* ============================================
+   SEÇÃO: Modal (Janelas Pop-up)
+   ============================================ */
+
+.modal {
+    /* O modal começa invisível */
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1000;
+}
+
+/* Quando "show" é adicionado, o modal aparece */
+.modal.show {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Fundo escuro atrás do modal */
+.modal-backdrop {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    z-index: -1;
+}
+
+/* Card do modal (caixa com conteúdo) */
+.modal-card {
+    background: var(--cor-fundo);
+    border-radius: 10px;
+    padding: 40px;
+    max-width: 700px;
+    width: 90%;
+    max-height: 80vh;
+    overflow-y: auto;
+    position: relative;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.8);
+}
+
+/* Botão fechar modal (X) */
+.modal-close {
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    background: none;
+    border: none;
+    color: var(--cor-branco);
+    font-size: 32px;
+    cursor: pointer;
+    padding: 5px 10px;
+    transition: color 0.3s ease;
+}
+
+.modal-close:hover {
+    color: var(--cor-primaria);
+}
+
+/* Título no modal */
+#modal-title {
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    color: var(--cor-branco);
+}
+
+/* Resumo no modal */
+#modal-summary {
+    font-size: 16px;
+    line-height: 1.8;
+    margin-bottom: 20px;
+    color: var(--cor-cinza);
+}
+
+/* Detalhes no modal (tipo, ano) */
+#modal-details {
+    font-size: 14px;
+    color: var(--cor-cinza);
+    font-weight: 600;
+}
+
+/* ============================================
+   RESPONSIVIDADE (Telas Menores)
+   ============================================ */
+
+@media (max-width: 768px) {
+    /* Ajustar logo */
+    .logo {
+        font-size: 24px;
+    }
+    
+    /* Grid em telas menores */
+    .movies-grid {
+        grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+        gap: 15px;
+    }
+    
+    /* Título do hero menor */
+    #hero-title {
+        font-size: 32px;
+    }
+    
+    /* Resumo do hero menor */
+    #hero-summary {
+        font-size: 14px;
+    }
+    
+    /* Hero em telas pequenas */
+    .hero-section {
+        height: 350px;
+    }
+    
+    /* Modal em telas pequenas */
+    .modal-card {
+        width: 95%;
+        padding: 30px 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    /* Grid em celulares */
+    .movies-grid {
+        grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+        gap: 10px;
+    }
+    
+    /* Logo em celulares */
+    .logo {
+        font-size: 20px;
+    }
+    
+    /* Botões em celulares */
+    .hero-buttons {
+        flex-direction: column;
+        gap: 10px;
+    }
+    
+    .btn {
+        width: 100%;
+        justify-content: center;
+    }
+    
+    /* Hero bem menor em celulares */
+    .hero-section {
+        height: 300px;
+    }
+    
+    #hero-title {
+        font-size: 24px;
+    }
+    
+    #hero-summary {
+        font-size: 12px;
+    }
 }
