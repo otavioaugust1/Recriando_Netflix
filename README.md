@@ -204,9 +204,29 @@ Se tiver dúvidas sobre como o código funciona:
 3. Use o DevTools para inspecionar elementos
 4. Consulte a documentação: [MDN Web Docs](https://developer.mozilla.org/)
 
+## 👨‍🏫 Professores e Referências
+
+Este projeto foi baseado em **aulas e metodologias educacionais** do professor:
+
+### **Felipe Aguiar**
+- 🎓 Coordenador de Education & Talent Success, Digital Innovation On
+- 📱 GitHub: [@felipeAguiarCode](https://github.com/felipeAguiarCode)
+
+**Conceitos ensinados nas aulas:**
+- Como estruturar um layout responsivo
+- Técnicas de CSS3 com containers e variáveis
+- Posicionar elementos com Flexbox (e Grid)
+- Integração de plugins jQuery na aplicação
+- Boas práticas em desenvolvimento web
+
+### Recursos Utilizados
+- 🎠 [Owl Carousel](https://owlcarousel2.github.io/) - Para carrosséis
+- 🎬 [The Movie Database (TMDB)](https://www.themoviedb.org/) - Imagens e dados dos filmes
+- 📚 [Wikipedia API](https://www.wikipedia.org/) - Informações adicionais
+
 ## 👨‍💻 Autor
 
-Projeto desenvolvido como exercício de aprendizado em desenvolvimento web.
+Projeto desenvolvido como exercício de aprendizado em desenvolvimento web com base nas aulas do Professor Felipe Aguiar.
 
 ---
 
