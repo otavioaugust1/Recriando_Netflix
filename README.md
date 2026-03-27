@@ -1,5 +1,11 @@
 # 🎬 Netflix Clone - Projeto Educativo
 
+[![Licença: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![HTML5](https://img.shields.io/badge/HTML-5-E34C26.svg)](https://html.spec.whatwg.org/)
+[![CSS3](https://img.shields.io/badge/CSS-3-1572B6.svg)](https://www.w3.org/Style/CSS/)
+[![JavaScript](https://img.shields.io/badge/JavaScript-ES6+-F7DF1E.svg)](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript)
+[![Status](https://img.shields.io/badge/status-active-brightgreen.svg)](https://github.com/otavioaugust1/Recriando_Netflix)
+
 Um projeto didático que recria a interface da Netflix utilizando **HTML, CSS e JavaScript puro**, focado em aprendizado prático de desenvolvimento web.
 
 ## 📋 Objetivo
@@ -225,6 +231,14 @@ Este projeto foi baseado em **aulas e metodologias educacionais** do professor:
 - 📚 [Wikipedia API](https://www.wikipedia.org/) - Informações adicionais
 
 ## 👨‍💻 Autor
+
+**Autor:** Otavio Augusto
+
+**Contato:** otavioaugust@gmail.com
+
+**Versão:** 0.0.1 (Março/2026)
+
+---
 
 Projeto desenvolvido como exercício de aprendizado em desenvolvimento web com base nas aulas do Professor Felipe Aguiar.
 
