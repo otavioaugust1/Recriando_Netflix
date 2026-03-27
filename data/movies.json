@@ -1,5 +1,12 @@
 [
   {
+    "title": "The Matrix",
+    "type": "Filme",
+    "year": "1999",
+    "summary": "Um hacker descobre a verdade perturbadora sobre sua realidade e seu papel na guerra contra máquinas de controle de mente. Ficção científica clássica revolucionária.",
+    "poster": "img/matrix.jpg"
+  },
+  {
     "title": "Encanto",
     "type": "Filme",
     "year": "2021",
@@ -68,12 +75,5 @@
     "year": "2021",
     "summary": "Um homem habilidoso em artes marciais é arrastado para o mundo de sua família criminosa. Filme Marvel de ação com lutas espetaculares.",
     "poster": "img/shang-chi.jpg"
-  },
-  {
-    "title": "The Matrix",
-    "type": "Filme",
-    "year": "1999",
-    "summary": "Um hacker descobre a verdade perturbadora sobre sua realidade e seu papel na guerra contra máquinas de controle de mente. Ficção científica clássica revolucionária.",
-    "poster": "img/matrix.jpg"
   }
 ]
